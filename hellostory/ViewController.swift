@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
+        NSLog("%@ :: %d" , #function,#line);
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    @objc
+    func onTapButton() {
+        print("Button was tapped.")
+    }
+    
+    
+    
 }
 
